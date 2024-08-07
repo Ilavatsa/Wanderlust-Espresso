@@ -43,9 +43,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Prevent scrollbars from appearing */
-  position: relative;
+  height: 99vh; /* Full viewport height */
 }
 
 /* Style for the image */
@@ -159,138 +157,39 @@
   display: block;
 }
 
-.order-page {
-  padding: 20px;
-}
-
-.category {
-  margin-bottom: 40px;
-}
-
-.category-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.order-item {
-  width: 200px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.item-img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-
-.contact-card{
-  padding: 20px;
-  margin: 20px;
-  background-color: rgb(234, 237, 230);
-  border-radius: 10px;
-  box-shadow:0 4px 8px rgba(0, 0, 0, 0.1) ;
-}
-
-.contact-card h1 .contact-card h2{
-  color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
-.contact-form{
-  padding: 20px;
+.company-info {
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: lightgray;
+  font-size: 16px;
 }
 
-.contact-form form div{
-  margin-bottom: 10px;
+.company-info p {
+  margin: 5px 0;
 }
 
-.contact-form label{
-  display: block;
-  font-weight: bold;
-  margin-bottom: 10px;
+.company-info a {
+  color: #007bff;
+  text-decoration: none;
 }
 
-.contact-form input, .contact-form textarea{
-  padding: 10px;
-  width: 100%;
-  border: 1px solid lightgray;
-  border-radius: 8px;
-  margin-bottom: 10px;
-} 
-
-.contact-form button {
-  background-color:rgb(118, 186, 241);
-  color: lightcyan;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.company-info a:hover {
+  text-decoration: underline;
 }
 
-.contact-form button:hover {
-  background-color:rgb(17, 21, 228) ;
-}
 
-.contact-info {
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color:lightgrey;
-  border: 1px solid lightgray;
-  border-radius: 8px;
-}
-
-/* Container for menu cards */
+/* Ensure these styles are included in your App.css file */
 .menu-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  flex-wrap: wrap;
-  gap: 20px;
-  min-height: 100vh; /* Ensure the container takes full viewport height */
-  align-content: center; /* Align content along the cross axis */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f5f5f5; /* Light background color */
 }
 
-/* Individual menu card styling */
-.menu-card {
-  max-width: 300px; /* Set maximum width for better image display */
-  width: 100%; /* Ensure the card width adapts to container */
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff; /* Optional: Adds background color */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-}
 
-/* Image styling within menu card */
-.menu-img {
-  width: 100%; /* Ensure the image covers the full width of the card */
-  height: auto; /* Automatically adjust height based on the image's aspect ratio */
-  border-radius: 8px;
-  object-fit: cover; /* Ensure the image covers the container without stretching */
-}
-
-/* Styling for menu name */
-.menu-name {
-  font-size: 1.2em;
-  margin: 10px 0;
-}
-
-/* Styling for menu details */
-.menu-details p {
-  margin: 5px 0;
+.menu-image {
+  width: 150%;
+  height: 100vh;
+  border-radius: 10px;
 }
 
 
@@ -358,4 +257,56 @@ p {
 
 html {
   scroll-behavior: smooth;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: lightgrey;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  background:lightgrey;
+  padding: 20px;
+}
+
+.profile-details-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-details-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.profile-details-container p {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.profile-details-container strong {
+  color: #000;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+  
 }
